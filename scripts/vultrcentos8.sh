@@ -102,7 +102,7 @@ $(awk -F "/" '{print "ifconfig '$main_interface' inet6 add " $5 "/64"}' ${WORKDA
 EOF
 }
 echo "installing apps"
-yum -y install gcc net-tools bsdtar zip make >/dev/null
+yum -y install iptables gcc net-tools bsdtar zip make >/dev/null
 
 install_3proxy
 
